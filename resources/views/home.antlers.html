@@ -1,0 +1,158 @@
+<div class="relative">
+    <div class="h-screen bg-[url('/assets/nightsky.png')] bg-cover bg-center">
+        <div class="flex justify-center items-center h-lvh">
+            <div
+                class="w-full h-screen backdrop-blur-sm rounded-lg flex justify-center items-center"
+            >
+                <div
+                    class="max-[885px]: w-[80rem] h-[40rem] flex flex-col-reverse lg:flex-row justify-center items-center max-[1405px]:gap-[3rem]"
+                >
+                    <div
+                        class="w-[40rem] h-[40rem] max-[1405px]:w-[30rem] max-[1405px]:h-[35rem] max-sm:w-[20rem]"
+                    >
+                        <div
+                            id="typewriter"
+                            class="text-[7rem] text-white font-bold text-shadow-lg h-[5rem] max-[1550px]:text-[5rem] max-[860px]:text-[3rem] max-sm:w-[20rem]"
+                        ></div>
+                        <div
+                            class="text-[2.8rem] text-white font-bold text-shadow-lg mt-[4rem] ml-[0.2rem] max-[860px]:mt-[0.5rem] max-[860px]:text-[2rem]"
+                        >
+                            I am Lucas de Gooijer
+                        </div>
+                        <div
+                            class="text-[1.8rem] text-white text-shadow-lg w-[50rem] h-[30rem] ml-[0.2rem] max-[1430px]:w-[30rem] max-[1430px]:h-[5rem] max-sm:h-[10rem] max-sm:w-[20rem]"
+                        >
+                            Welcome to my portfolio website! <br />
+                            Here you can meet and
+                            <span
+                                class="underline cursor-pointer hover:text-gray-200"
+                                >contact me</span
+                            >
+                            and see <br />
+                            my projects that i've made along the years!
+                        </div>
+                    </div>
+                    <div
+                        class="w-[40rem] h-[40rem] max-[1430px]:w-[20rem] max-[1430px]:h-[20rem] max-lg:w-[14rem]"
+                    >
+                        <img src="{{myimg}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-b border-black w-full border-5"></div>
+    <div
+        class="h-screen bg-[url('/assets/who-am-i-bg.jpg')] bg-cover bg-center text-white"
+    >
+        <div class="flex justify-center items-center gap-[5rem] max-md:flex-col">
+            <div
+                class="w-[45rem] h-[21rem] backdrop-blur-xl rounded-xl mt-[6rem] pl-4 shadow-xl max-[1550px]:w-[35rem] max-lg:w-[20rem] max-lg:h-[35rem]"
+            >
+                <div
+                    class="text-[5rem] text-white font-bold text-shadow-lg cursor-default max-[1550px]:text-[3rem]"
+                >
+                    Who am I?
+                </div>
+                <div
+                    class="text-xl w-[40rem] text-shadow-lg max-[1550px]:w-[32rem] max-[1550px]:text-[1.35rem] max-lg:w-[18rem]"
+                >
+                    {{content}}
+                </div>
+            </div>
+            <div
+                class="w-[45rem] h-[21rem] backdrop-blur-xl rounded-xl mt-[6rem] pl-4 shadow-xl max-[1550px]:w-[35rem] max-[1395px]:w-[28rem] max-[1180px]:w-[14rem] max-[1180px]:h-[18rem] max-lg:mt-[0rem] max-lg:h-[12rem]"
+            >
+                <div
+                    class="text-[5rem] text-white font-bold text-shadow-lg cursor-default max-[1180px]:text-[3rem]"
+                >
+                    My Skills
+                </div>
+                <div
+                    class="text-xl w-[40rem] text-shadow-lg max-[1395px]:w-[5rem]"
+                >
+                    <ul class="list-disc pl-6">
+                        <li>
+                            <div class="">
+                                <img
+                                    src="/assets/html5.png"
+                                    class="w-[3rem] h-[3rem]"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <img
+                                src="/assets/css3.webp"
+                                class="w-[3rem] h-[3rem]"
+                            />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center max-[1180px]:gap-[1rem] max-md:flex-col">
+            <div
+                class="w-[37.5rem] h-[27rem] backdrop-blur-xl rounded-xl mt-6 shadow-xl max-[1550px]:w-[32.5rem] max-[1550px]:h-[22rem] max-[1120px]:w-[20rem] max-[1120px]:h-[15rem]"
+            >
+                <div class="flex justify-between items-center">
+                    <div
+                        class="text-[4rem] text-white font-bold text-shadow-lg cursor-default pl-4 max-[1120px]:text-[2rem]"
+                    >
+                        Projects
+                    </div>
+                    <a href="/pages/projects"
+                        ><div
+                            class="mr-[5rem] text-3xl font-bold underline cursor-pointer mt-4 max-[1120px]:text-xl max-[1120px]:mt-1"
+                        >
+                            See more
+                        </div></a
+                    >
+                </div>
+                <div class="flex justify-center items-center">
+                    <div
+                        class="w-[30rem] h-[18rem] rounded-xl relative max-[1550px]:w-[24rem] max-[1550px]:h-[13rem] max-[1120px]:w-[15rem] max-[1120px]:h-[8rem]"
+                    >
+                        <a href="{{link}}" target="_blank"
+                            ><img
+                                src="{{projectimg}}"
+                                class="w-full rounded-xl cursor-pointer"
+                        /></a>
+                        <div
+                            class="font-bold text-[2rem] p-4 absolute top-[0rem]"
+                        >
+                            My latest project
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div
+                    class="spin-slow w-[20rem] h-[20rem] max-[1550px]:w-[15rem] max-[1550px]:h-[15rem] max-[1395px]:w-[8rem] max-[1395px]:h-[8rem] max-[1180px]:hidden"
+                >
+                    <img src="/assets/yingandyang.png" />
+                </div>
+            </div>
+            <div
+                class="w-[37.5rem] h-[27rem] backdrop-blur-xl rounded-xl mt-6 shadow-xl pl-4 max-[1550px]:w-[32.5rem] max-[1550px]:h-[22rem] max-[1120px]:h-[10rem] max-[1120px]:w-[27rem] max-lg:w-[21rem] max-lg:h-[7rem] max-md:mb-[5rem]"
+            >
+                <div
+                    class="text-[5rem] text-white font-bold text-shadow-lg cursor-default max-[1120px]:text-[3rem] max-lg:text-[1.5rem]"
+                >
+                    Contact
+                </div>
+                <ul class="list-disc">
+                    <li class="flex items-center">
+                        <span class="text-3xl">•</span>
+                        <div class="text-3xl font-bold pl-2 max-lg:text-lg">E-mail:</div>
+                        <div class="text-2xl ml-2 max-lg:text-lg">
+                            Lucas.gooijer@icloud.com
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="text-2xl text-white flex items-center justify-center drop-shadow-xl mt-[3rem]"
+        ></div>
+    </div>
+</div>

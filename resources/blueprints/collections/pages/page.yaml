@@ -1,0 +1,159 @@
+title: Pages
+tabs:
+  main:
+    display: Main
+    sections:
+      - fields:
+          - handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          - handle: content
+            field:
+              type: markdown
+              display: Content
+              localizable: true
+          - handle: projectimg
+            field:
+              type: assets
+              required: true
+              display: projectimg
+              container: assets
+              max_files: 1
+              min_files: 1
+              validate: 
+              - required
+          - handle: projectimg2
+            field:
+              type: assets
+              display: projectimg2
+              container: assets
+              max_files: 1
+              min_files: 1
+          - handle: projectimg3
+            field:
+              type: assets
+              display: projectimg3
+              container: assets
+              max_files: 1
+              min_files: 1
+          - handle: projectimg4
+            field:
+              type: assets
+              display: projectimg4
+              container: assets
+              max_files: 1
+              min_files: 1
+          - handle: projectimg5
+            field:
+              type: assets
+              display: projectimg5
+              container: assets
+              max_files: 1
+              min_files: 1
+          - handle: projectimg6
+            field:
+              type: assets
+              display: projectimg6
+              container: assets
+              max_files: 1
+              min_files: 1
+          - handle: projectimg7
+            field:
+              type: assets
+              display: projectimg7
+              container: assets
+              max_files: 1
+              min_files: 1
+          - handle: projectimg8
+            field:
+              type: assets
+              display: projectimg8
+              container: assets
+              max_files: 1
+              min_files: 1
+          - handle: projectimg9
+            field:
+              type: assets
+              display: projectimg9
+              container: assets
+              max_files: 1
+              min_files: 1
+          - handle: link
+            field:
+              type: text
+              display: link
+          - handle: link2
+            field:
+              type: text
+              display: link2
+          - handle: link3
+            field:
+              type: text
+              display: link3
+          - handle: link4
+            field:
+              type: text
+              display: link4
+          - handle: link5
+            field:
+              type: text
+              display: link5
+          - handle: link6
+            field:
+              type: text
+              display: link6
+          - handle: link7
+            field:
+              type: text
+              display: link7
+          - handle: link8
+            field:
+              type: text
+              display: link8
+          - handle: link9
+            field:
+              type: text
+              display: link9
+          - handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          - handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          - handle: about
+            field:
+              type: text
+              display: about me
+          - handle: myimg
+            field:
+              type: assets
+              display: images
+              container: assets
+              max_files: 1
+              min_files: 1
+  sidebar:
+    display: Sidebar
+    sections:
+      - fields:
+          - handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: "max:200"
+          - handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

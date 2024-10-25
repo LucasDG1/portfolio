@@ -1,0 +1,50 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This is all you. */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+.animated-background {
+    background-size: 200%;
+
+    -webkit-animation: animation 10s ease infinite;
+    -moz-animation: animation 10s ease infinite;
+    animation: animation 10s ease infinite;
+}
+.text-shadow-lg {
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+.test{
+  width: 80rem;
+  height: 60rem;
+  margin-top: 7rem;
+  cursor: default;
+}
+
+@keyframes animation {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+}
+@keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Tailwind plugin doesn't have built-in slow spins, so we add it */
+  .spin-slow {
+    animation: spin-slow 25s linear infinite;
+  }
